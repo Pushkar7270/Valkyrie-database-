@@ -12,7 +12,7 @@ class Schikshal:
         return f"valkyrie: {valk.name}, age:{valk.age},rank:{valk.rank},power:{valk.power},element:{valk.element},category:{valk.category}"
     def load(filename='valkyrie.csv'):
         try:
-            with open(filename, 'r+', newline='') as file:
+            with open(filename, 'r', newline='') as file:
                 reader = csv.reader(file)
                 next(reader)  # Skip header
                 return [Schikshal(row[0], int(row[1]), row[2], row[3], row[4], row[5]) for row in reader]
