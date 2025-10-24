@@ -73,8 +73,8 @@ while True:
             for valk in valkyrie_database:
                 if valk.name==e:
                     print(valk)
-            else:
-                print(f'Valkyrie profile does not exist')
+                else:
+                    print(f'Valkyrie profile does not exist')
             f=input('do you want to see any other valkyrie?(say yes or no):')
             if f.lower()=='no':
                 break
